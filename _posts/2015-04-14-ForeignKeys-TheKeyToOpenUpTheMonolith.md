@@ -1,5 +1,7 @@
-Foreign keys - the key to open up the monolith
-===
+---
+layout: post
+title: Foreign keys - the key to open up the monolith
+---
 I had a discussion yesterday with a developer that just created a service to expose a part of the big monolith. He had separated out a small business domain, created an API and was now advocating people around him to use it. 
 
 Having a first look at the service I was surprised to find the data tables still in the same big monolith relational database. Asking if he had any thoughts on breaking out his new domain into its own separate database or maybe just its own schema, he replied
