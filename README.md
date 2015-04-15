@@ -1,1 +1,1 @@
-My blog @ https://dawallin.github.io
+My blog @ https://www.dawallin.com
