@@ -23,6 +23,8 @@ The Jekyll engine is written in Ruby but don't worry, you need no Ruby skills, o
 #### Content files
 The main object in Jekyll is the content files. This is where your text will be. Several formats are supported but I will use markdown. In markdown you us plain text with small markers to describe text formatting. Markdown makes it simple and fast to write rich text documents. The content files can be stored anywhere under the Jekyll folder but convention for blog posts is under the _post folder. 
 
+For a quick markdown kick-start, try out the free online markdown editor [StackEdit](https://stackedith.io). 
+
 At the top of the content file are a few lines of metadata in the format of a key-value list. The most important is the *Layout* property with tells the Jekyll engine which layout to choose.
 
 #### Layout templates
@@ -43,6 +45,26 @@ There are many different templates for Jekyll that you can choose from. There ar
 #### Clone start template
 Open up git and clone the following
 
-    git clone git@github.com:barryclark/jekyll-now.git
+    git clone https://github.com/barryclark/jekyll-now.git
 
 Now you got all the files you need on your computer. Look them through and familiarize yourself to the different building blocks.
+
+Hosting on Github Pages
+---
+The simplest hosting for your Jekyll pages is directly on Github. There are two different places for your sites, on your personal account or on one of your projects. For a personal account site you need to create a repository called YourUserName.github.io and check in your code in the "master" branch. For a project site the Jekyll code needs to be checked in on the project repository, but in a separate branch called "gh_pages". In this tutorial I will use and create a personal account site.
+
+Log in to github (after createing a new account if you don't already have one) and create a new repository called YourUserName.github.io. We no want to connect the Jekyll-now repository we cloned in Part 1 to our new repository. Rename the folder if you like and then run the following commands from inside the new folder,
+
+	# Point origin to your site (if you use https authentication)
+	git remote set-url origin https://github.com/YourUserName/YourUserName.github.io.git
+	# or (if you use SSH-key authentication)
+	git remote set-url origin git@github.com:YourUserName/YourUserName.github.io.git
+	
+	# Use simple mode (the new git standard) for push.
+	git config --global push.default simple
+
+	# Push your code to Github
+	git push
+
+ Start by browsing your repository web site at github.com/YourUserName/YourUserName.github.io. You should now see all your files already here. If they are you can go to the specific website "YourUserName.github.io".
+ 
