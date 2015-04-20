@@ -10,7 +10,7 @@ We will use a popular blog engine called **Jekyll** that uses markdown syntax, w
  1. Choosing a username
  2. Playing with Jekyll
  3. Hosting on Github Pages
- 4. Adding Social Network
+ 4. Adding Social Networks
  5. Insight with Google Analytics
  6. Simple Search Engine Optimization SEO
 
@@ -66,5 +66,41 @@ Log in to github (after createing a new account if you don't already have one) a
 	# Push your code to Github
 	git push
 
- Start by browsing your repository web site at github.com/YourUserName/YourUserName.github.io. You should now see all your files already here. If they are you can go to the specific website "YourUserName.github.io".
+ Start now by browsing your Github repository at `github.com/YourUserName/YourUserName.github.io`. You should see all your files already here. If they are you can go to the specific website `YourUserName.github.io`.
+#### Custom domain
+Next step is to link a custom domain to your site. Go to your favorite domain name registrar and register a unique domain name. I chosed [Binero.se](http:/www.binero.se) because they have the CNAME alias function on there free account, and I also used them with positive results before. Go to DNS settings and add a CNAME for `www.YourSite.com` pointing to `YourUserName.github.io`. 
+The last step is to let Github know about the link. Create a new file called `CNAME` in the root folder of your repository. Give it just a single line 
+	
+	www.YourSite.com
  
+Now it's only to wait for these changes to mirror out to all the DNS servers. The domain name registrar warned that this could take up to 3 hours but for me I reached my Github hosted site via my domain address after only 20 minutes.
+ 
+ Adding Social Networks
+---
+ One of the reasons for choosing Jekyll-Now over standard Jekyll is the extended out-of-the-box support for social networks. In the `_config.yaml` file we find the following list of key values:
+
+	# Includes an icon in the footer for each username you enter
+	footer-links:
+		dribbble:
+		email:
+		facebook:
+		flickr:
+		github:
+		instagram:
+		linkedin:
+		pinterest:
+		rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+		twitter: 
+		stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+		youtube: # channel/<your_long_string> or user/<user-name>
+ 
+Now it's just to go to all of the different networks, open an account if you don't already have one, then go back an fill in the username in the right place in the list above. 
+####Allowing comments
+Now when readers can see who you are it's time to let them discuss and comment on your blog posts. This is what the disqus widget is for. Look further down in the `_config.yaml` file and find the disqus key-value: 
+	
+	# Enter your Disqus shortname (not your username) to enable commenting on posts	
+	# You can find your shortname on the Settings page of your Disqus account
+	disqus: 
+If you go slow and carefully read the instruction you will notice that it's not the username you should enter. Given the right shortname it works like a charm.
+Insight with Google Analytics
+---
