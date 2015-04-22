@@ -49,6 +49,16 @@ Open up git and clone the following
 
 Now you got all the files you need on your computer. Look them through and familiarize yourself to the different building blocks.
 
+#### Hello World blog post
+Create a new file in the _post folder. The filename should include the date of the post followed by unique describing title. This title will be the url for the post. An example of a filename is `2015-04-01-Hello_World`. Inside the file there are two sections, a key-value section, and the blogpost content. The key-values informs Jekyll of which layout to choose and which title to set. You can add extra parameters here that can be used inside the layout templates. A full Hello World example blog post would then look something like
+
+	---
+	layout: post
+	title: Foreign keys - the key to open up the monolith
+	---
+	**Hello World!**
+*Filename:* 2015-04-01-Hello_World.md
+
 Hosting on Github Pages
 ---
 The simplest hosting for your Jekyll pages is directly on Github. There are two different places for your sites, on your personal account or on one of your projects. For a personal account site you need to create a repository called YourUserName.github.io and check in your code in the "master" branch. For a project site the Jekyll code needs to be checked in on the project repository, but in a separate branch called "gh_pages". In this tutorial I will use and create a personal account site.
@@ -96,7 +106,7 @@ Now it's only to wait for these changes to mirror out to all the DNS servers. Th
  
 Now it's just to go to all of the different networks, open an account if you don't already have one, then go back an fill in the username in the right place in the list above. 
 ####Allowing comments
-Now when readers can see who you are it's time to let them discuss and comment on your blog posts. This is what the disqus widget is for. Look further down in the `_config.yaml` file and find the disqus key-value: 
+Now when readers can see who you are it's time to let them discuss and comment on your blog posts. This is what the disqus widget is for. Look futher down in the `_config.yaml` file and find the disqus key-value: 
 	
 	# Enter your Disqus shortname (not your username) to enable commenting on posts	
 	# You can find your shortname on the Settings page of your Disqus account
