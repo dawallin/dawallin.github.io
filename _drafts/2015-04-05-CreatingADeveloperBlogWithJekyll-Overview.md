@@ -7,11 +7,10 @@ In this blog post I'm going to show how to quickly start a simple blog with the 
 
 We will use a popular blog engine called **Jekyll** that uses markdown syntax, which is "compiled" into static blog pages. For hosting we choose **Github Pages**, and we will look at how to set it up with your own custom domain. After getting the blog up we will link the blog to your other social networks, followed by adding **Google Analytics** for, and last we look at **Google Webmaster Tools** to hint Google to crawl and index your site.
 
- 1. Choosing a username
- 2. Playing with Jekyll
- 3. Hosting on Github Pages
- 4. Adding Social Networks
- 5. Insight with Google Analytics
+ 1. Playing with Jekyll
+ 2. Hosting on Github Pages
+ 3. Adding Social Networks
+ 4. Insight with Google Analytics
  6. Simple Search Engine Optimization SEO
 
 Playing with Jekyll
