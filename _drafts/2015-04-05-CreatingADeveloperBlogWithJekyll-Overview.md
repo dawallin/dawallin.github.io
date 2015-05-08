@@ -111,5 +111,11 @@ Now when readers can see who you are it's time to let them discuss and comment o
 	# You can find your shortname on the Settings page of your Disqus account
 	disqus: 
 If you go slow and carefully read the instruction you will notice that it's not the username you should enter. Given the right shortname it works like a charm.
+
 Insight with Google Analytics
 ---
+
+Ohh, I almost forgot to tell you. Once you got Google Analytics up and running you will notice that you get a lot of hits from suspicious users and crawler engines. These are called refferer spam, and just like email spam you should not follow the links. A good article on how to filter your analytics from spam is found here: [What is referrer spam and how to stop it - Guide](http://www.ohow.co/what-is-referrer-spam-how-stop-it-guide/).
+Summary
+---
+That's it. Hopefully you, just like me, now have a running static jekyll blogg hosted on gitpages. 
