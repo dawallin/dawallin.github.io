@@ -1,11 +1,15 @@
-Creating a developer blog with Jekyll - Overview
-===
+---
+layout: post
+title: Creating a developer blog with Jekyll
+---
+In this blog post I'm going to show how to quickly start a simple blog with the tool that you as a developer use daily and hopefully are most familiar with, Git.
+
+We will use a popular blog engine called **Jekyll** that uses markdown syntax, which is "compiled" into static blog pages. For hosting we choose **Github Pages**, and we will look at how to set it up with your own custom domain. After getting the blog up we will link the blog to your other social networks, followed by adding **Google Analytics** for, and last we look at **Google Webmaster Tools** to hint Google to crawl and index your site.
 
 Prerequisites: Basic git knowledge.
 
-In this blog post I'm going to show how to quickly start a simple blog with the tool that you as a developer use daily and hopefully are most familiar with, Git. 
-
-We will use a popular blog engine called **Jekyll** that uses markdown syntax, which is "compiled" into static blog pages. For hosting we choose **Github Pages**, and we will look at how to set it up with your own custom domain. After getting the blog up we will link the blog to your other social networks, followed by adding **Google Analytics** for, and last we look at **Google Webmaster Tools** to hint Google to crawl and index your site.
+Overview
+---
 
  1. Playing with Jekyll
  2. Hosting on Github Pages
@@ -17,7 +21,7 @@ Playing with Jekyll
 ---
 Jekyll is an open-source project used to build static web sites. It has a build in support and convention for blog post but can support any custom site. 
 
-The Jekyll engine is written in Ruby but don't worry, you need no Ruby skills, or even set-up. In this blog post we will use GitHub as our host/engine. If your interested in running Jekyll locally take a look at my blog post on Docker where I set up a ruby environment on a Windows machine to compile and run Jekyll in (*Upcomming*...). 
+The Jekyll engine is written in Ruby but don't worry, you need no Ruby skills, or even set-up. In this blog post we will use GitHub as our host/engine. If your interested in running Jekyll locally take a look at my blog post on Docker where I set up a ruby environment on a Windows machine to compile and run Jekyll in (*Upcoming*...). 
 
 #### Content files
 The main object in Jekyll is the content files. This is where your text will be. Several formats are supported but I will use markdown. In markdown you us plain text with small markers to describe text formatting. Markdown makes it simple and fast to write rich text documents. The content files can be stored anywhere under the Jekyll folder but convention for blog posts is under the _post folder. 
@@ -105,7 +109,7 @@ Now it's only to wait for these changes to mirror out to all the DNS servers. Th
  
 Now it's just to go to all of the different networks, open an account if you don't already have one, then go back an fill in the username in the right place in the list above. 
 ####Allowing comments
-Now when readers can see who you are it's time to let them discuss and comment on your blog posts. This is what the disqus widget is for. Look futher down in the `_config.yaml` file and find the disqus key-value: 
+Now when readers can see who you are it's time to let them discuss and comment on your blog posts. This is what the disqus widget is for. Look further down in the `_config.yaml` file and find the disqus key-value: 
 	
 	# Enter your Disqus shortname (not your username) to enable commenting on posts	
 	# You can find your shortname on the Settings page of your Disqus account
@@ -121,12 +125,12 @@ Start by signing on and register to [Google Analytics](http://www.google.com/ana
 
 Ohh, I almost forgot to tell you. Once you got Google Analytics up and running you will notice that you get a lot of hits from suspicious users and crawler engines. These are called refferer spam, and just like email spam you should not follow the links. A good article on how to filter your analytics from spam is found here: [What is referrer spam and how to stop it - Guide](http://www.ohow.co/what-is-referrer-spam-how-stop-it-guide/).
 ####Webmaster Tools
-**_If it not on google it doesn't exist_**, therfore we want to help Google to crawl your page. This is done in the Webmaster tools. 
+**_If it not on Google it doesn't exist_**, therefore we want to help Google to crawl your page. This is done in the Webmaster tools. 
 
-On the admin site of google anayltics go to the property settings for your site. At the very bottom there is a choice for Webmaster Tools settings. Click on the Edit, and you get redirected to [Webmaster Tools](www.google.com/webmasters). Now you can add the site to Webmaster Tools and link it back to your analytics account.
+On the admin site of Google Anayltics go to the property settings for your site. At the very bottom there is a choice for Webmaster Tools settings. Click on the Edit, and you get redirected to [Webmaster Tools](www.google.com/webmasters). Now you can add the site to Webmaster Tools and link it back to your analytics account.
 
-In the webmaster tool you can go to Crawl and "Fetch as Google". First force google to fetch your site, and then submit the collected info. You can do this a limited times a month, but once google found your site it will continue to crawl it automatically. If you come back to the webmaster tools after a few days you can find more info about the crawl, if it found any problems, which words it rated the highest, which external sites that are linking to your site, and much more.
+In the webmaster tool you can go to Crawl and "Fetch as Google". First force Google to fetch your site, and then submit the collected info. You can do this a limited times a month, but once Google found your site it will continue to crawl it automatically. If you come back to the webmaster tools after a few days you can find more info about the crawl, if it found any problems, which words it rated the highest, which external sites that are linking to your site, and much more.
 
 Summary
 ---
-That's it. Hopefully you, just like me, now have a running static jekyll blogg hosted on gitpages. 
+That's it. Hopefully you, just like me, now have a running static Jekyll blog hosted on gitpages. 
