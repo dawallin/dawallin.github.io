@@ -114,8 +114,19 @@ If you go slow and carefully read the instruction you will notice that it's not 
 
 Insight with Google Analytics
 ---
+####Analytics
+When writing blog posts it is interesting to know more about your readers. Do you actually have any readers at all? Are the returning? Did they found your site on a search engine or did they follow a link? All these type of questions are answered by Google Analytics.
+ 
+Start by signing on and register to [Google Analytics](http://www.google.com/analytics) with your gmail account. Pick an account name, a website name and give the url to the web page. Click on the "Get tracing-ID" button. You will now be redirected to the admin page where you can see your tracing id. This is a site unique id that is sent to google every time your site is loaded. This Id you have to enter into the Jekyll config file. 
 
 Ohh, I almost forgot to tell you. Once you got Google Analytics up and running you will notice that you get a lot of hits from suspicious users and crawler engines. These are called refferer spam, and just like email spam you should not follow the links. A good article on how to filter your analytics from spam is found here: [What is referrer spam and how to stop it - Guide](http://www.ohow.co/what-is-referrer-spam-how-stop-it-guide/).
+####Webmaster Tools
+**_If it not on google it doesn't exist_**, therfore we want to help Google to crawl your page. This is done in the Webmaster tools. 
+
+On the admin site of google anayltics go to the property settings for your site. At the very bottom there is a choice for Webmaster Tools settings. Click on the Edit, and you get redirected to [Webmaster Tools](www.google.com/webmasters). Now you can add the site to Webmaster Tools and link it back to your analytics account.
+
+In the webmaster tool you can go to Crawl and "Fetch as Google". First force google to fetch your site, and then submit the collected info. You can do this a limited times a month, but once google found your site it will continue to crawl it automatically. If you come back to the webmaster tools after a few days you can find more info about the crawl, if it found any problems, which words it rated the highest, which external sites that are linking to your site, and much more.
+
 Summary
 ---
 That's it. Hopefully you, just like me, now have a running static jekyll blogg hosted on gitpages. 
