@@ -5,19 +5,19 @@ title: Docker Toolbox - Docker on Windows made dead simple (installation tutoria
 ####Introduction
 There are two types of Docker containers, one type running on a Linux API and one on a Windows Server API. Most of the Docker images on the docker hub today, if not all, are Linux containers and need a Linux OS to run. This is a problem if you are running Windows as your default OS and is where the Docker Toolbox enters the scene. It offers a package installer including 
 
->**The Virtual Box**
+>**The Virtual Box.**
 >	This is the hypervisor that makes it possible to run a Linux OS image inside Windows. Your docker containers will run inside of the Linux OS.
 
->**Docker Machine for Windows**
+>**Docker Machine for Windows.**
 >	Helps with creation and configuration of a Docker host inside of the VirtualBox.
 	
->**Docker Client for Windows**
+>**Docker Client for Windows.**
 >	The heart of the Docker infrastructure is the Docker host. That is where all the containers run. To send commands like spawn up a new container, or tear down a used one, you also need a Docker client. One Linux client is included in the Docker image, but this is the Windows client. These Docker clients are mainly a wrapper around the Docker REST API.
 	
->**Kitematic for Windows**
+>**Kitematic for Windows.**
 >	A GUI Docker client. Simplifies container overview and management compared to the command line clients.
 	
->**Git for Windows**
+>**Git for Windows.**
 >	A basic git client.
 	
 ####Installation
