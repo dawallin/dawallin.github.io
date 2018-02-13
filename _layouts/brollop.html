@@ -2,25 +2,24 @@
 <html>
 
 <head>
+        <meta name="HandheldFriendly" content="True">
+
+        <meta name="MobileOptimized" content="320">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
         <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
         <style type="text/css">
-                html {
-                        font-family: sans-serif;
-                        line-height: 1.15;
-                        -ms-text-size-adjust: 100%;
-                        -webkit-text-size-adjust: 100%;
-                        -webkit-box-sizing:border-box;
-                        box-sizing:border-box;
-                }
-
-                article,
+                /* article,
                 aside,
                 footer,
                 header,
                 nav,
                 section {
                         display: block;
-                }
+                } */
 
                 body {
                         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -29,10 +28,39 @@
                         line-height: 1.5;
                         color: #292b2c;
                         background-color: #fff;
-                        margin: 0;
+                        margin: auto;
+                        max-width: 600px;
                 }
 
                 .title-one {
+                        font-family: 'Alex Brush';
+                        width: 100%;
+                        margin-top: 36px;
+                        text-align: center;
+                        font-size: 46px;
+                        line-height: 54px;
+                        font-weight: bold;
+                }
+
+                .line {
+                        background: none repeat scroll 0 0 #292b2c;
+                        height: 3px;
+                        margin-top: 20px;
+                        width: 30%;
+                        color: #292b2c;
+                }
+
+                #line1 {
+                        margin-left: 5%;
+                        float: left;
+                }
+
+                #line2 {
+                        margin-right: 5%;
+                        float: right;
+                }
+
+                .title-two {
                         width: 100%;
                         margin-top: 36px;
                         text-align: center;
@@ -63,19 +91,50 @@
 
                 .row {
                         display: flex;
+                        align-items: center;
+                        justify-content: center;
                         flex-wrap: wrap;
                         margin-right: -15px;
                         margin-left: -15px;
                 }
 
                 .column {
-                        flex: 0 0 50%;
-                        max-width: 50%;
-                        position: relative;
-                        width: 100%;
-                        min-height: 1px;
-                        padding-right: 15px;
-                        padding-left: 15px;
+                        -webkit-box-flex: 0;
+                        -webkit-flex: 0 0 100%;
+                        -ms-flex: 0 0 100%;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                }
+
+                @media screen and (max-width: 5000px) {
+                        .column {
+                                -webkit-box-flex: 0;
+                                -webkit-flex: 0 0 100%;
+                                -ms-flex: 0 0 100%;
+                                flex: 0 0 100%;
+                                max-width: 100%;
+                        }
+                }
+
+                @media (max-device-width: 5000px) {
+                        .column {
+                                -webkit-box-flex: 0;
+                                -webkit-flex: 0 0 100%;
+                                -ms-flex: 0 0 100%;
+                                flex: 0 0 100%;
+                                max-width: 100%;
+                        }
+                }
+
+                @media screen and (min-width: 5000px) {
+                        .column {
+                                -webkit-box-flex: 0;
+                                -webkit-flex: 0 0 40%;
+                                -ms-flex: 0 0 40%;
+                                flex: 0 0 40%;
+                                max-width: 40%;
+                                padding: 0 20px;
+                        }
                 }
 
                 .content {
@@ -90,55 +149,186 @@
 </head>
 
 <body>
+        <div>
+                        <img src="Three.png" style="width:100%; margin-bottom:-180px">    
+        </div>
         <div class="flex-container">
-
-                <div class="row">
-                        <div class="title-one">
-                                <p>Jenny Evertsson
-                                        <span class="fas fa-heart"></span> Daniel Wallin</p>
-                                <p>16 JUNI 2018</p>
+                <div class="text-box">
+                        <div class="row">
+                                <div class="title-one">
+                                        Jenny Evertsson
+                                        <br/>
+                                        <div id="line1" class="line"></div>
+                                        <span class="fas fa-heart"></span>
+                                        <div id="line2" class="line"></div>
+                                        <br/> Daniel Wallin
+                                        <br>
+                                </div>
+                                <div class="title-two">
+                                        16 JUNI 2018
+                                </div>
                         </div>
+                </div>
+                <div class="text-box">
+                                <div class="row">
+                                                <img src="JoD.jpg" width="100%">
+                                </div>
                 </div>
                 <div class="text-box">
                         <div class="row">
                                 <div class="column">
                                         <div>
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                <img src="Church.png" width="42">
                                         </div>
                                         <div class="content">
                                                 <span>
-                                                        16 juni 2018 kommer bli en vacker dag med vigsel kl. 15.30 mellan Jenny
-                                                        <span class="fas fa-heart"></span> Daniel.
+                                                        Vigseln sker i Lunds Domkyrka, belägen i Lundagård mitt i Lund. Cermonin börjar klockan 15:30.
                                                 </span>
                                         </div>
                                 </div>
                                 <div class="column">
                                         <div>
-                                                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                                <img src="Castle.png" width="42">
                                         </div>
                                         <div class="content">
                                                 <span>
-                                                        Vigsel och efterföljande bröllopsfest äger rum på AF-Borgen.
+                                                        <p>Festlokalen finns även den belägen i Lundagård, i AF-borgen (andra våningen, till vänster). AF-borgen är belägen ca tre minuters
+                                                        promenad nordost om kyrkan och tanken är att vi går dit tillsammans
+                                                        efter vigseln.
+                                                </p>
+                                                <p>Om vädret tillåter intar vi champagne vid fontänen
+                                                        utanför, annars samlas vi innanför huvudentrén.
+                                                </p>
                                                 </span>
                                         </div>
                                 </div>
                                 <div class="column">
                                         <div>
-                                                <i class="fa fa-question" aria-hidden="true"></i>
+                                                <img src="Suit.png" width="42">
                                         </div>
                                         <div class="content">
                                                 <span>
-                                                        Kom sommarfin. Vi vill att du känner dig bekväm och vi tycker att du är strålande vacker när du gör det.
+                                                        Vi har skrivit Kavaj på inbjudan, men vi ser oerhört löst på detta. Vill du hellre komma i frack eller i de sköna dansbyxorna går det minst lika bra. Huvudsaken är att du trivs. 
                                                 </span>
                                         </div>
                                 </div>
                                 <div class="column">
                                         <div>
-                                                <i class="fa fa-gift" aria-hidden="true"></i>
+                                                <img src="Drink.png" width="42">
                                         </div>
                                         <div class="content">
                                                 <span>
-                                                        Ni är välkomna utan bröllopspresent, men önskar ni ge något så ge vad ni vill från hjärtat eller ett bidrag till vår bröllopsresa.
+                                                        Fri bar :).
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Child.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        Vi gillar era barn, men bröllopsfesten önskar vi fira tillsammans med er vuxna (spädbarn undantaget).
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Speaker.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        Vi blir jätteglada för tal, sång och spex, vilka föranmäls till våra toastmasters:
+                                                        <br/>
+                                                        <a href="mailto:toastmasters@JennyOchDaniel2018.se?Subject=Jag%20vill%20hålla%20tal%20:)" target="_top">toastmasters@JennyOchDaniel2018.se</a>
+                                                        <br/> Johan Englund
+                                                        <a href="tel:076-828 84 40">076-828 84 40</a>
+                                                        <br/> Henrik Otterbeck
+                                                        <a href="tel:070-677 69 58">070-677 69 58</a>
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Present.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        Istället för eventuella presenter blir vi glada för ett bidrag till vår bröllopsresa, (SEB) 5509 – 29 422 31.
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Food.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        I samband med anmälan uppskattar vi om ni vill påtala eventuella allergier och önskemål om specialkost eller alkoholfritt
+                                                        alternativ. Önskar ni någon särskild låt att stuffa till på dansgolvet
+                                                        så passa gärna på att säga till om det också.
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Mail.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        Svara senast den 25:e mars till:
+                                                        <br/>
+                                                        <a href="mailto:osa@JennyOchDaniel2018.se?Subject=Jag%20vill%20hålla%20tal%20:)" target="_top">osa@JennyOchDaniel2018.se</a>
+                                                        <br/> Jenny
+                                                        <a href="tel:070-677 69 58">0730-97 99 66</a>
+                                                        <br/> Daniel
+                                                        <a href="tel:070-373 18 88">070-373 18 88</a>
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Hotel.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        Lund erbjuder flera olika övernattningsalternativ i flera olika prisklasser. <br/>
+                                                        <p>
+                                                        Med koden <b>PROMO1</b> går det bra att boka <b><a href="http://www.grandilund.se">Grand
+                                                        Hotel</a></b> och <b><a href="http://www.lundia.se">Hotel Lundia</a></b> med viss rabatt (15% på ordinarie priser om
+                                                        man bokar via hemsidorna och i mån av plats). </p>
+                                                        <p>
+                                                        Något mer av ett budgetalternativ
+                                                        kan vara t.ex <b><a href="http://www.lillahotellet.com">Lilla Hotellet</a></b>, <b><a href="https://www.stayat.se/lund">Stayat Lund</a></b> eller <b><a href="https://ligula.se/goodmorninghotels/lund/">Good Morning hotell</a></b> (det
+                                                        senare ligger dock något utanför stan).
+                                                </p>
+                                                <p>
+                                                        Det finns även vandrarhem
+                                                        eller boendemöjligheter i närliggande kommuner med bra kommunikationer
+                                                        till och från Lund. 
+                                                </p>
+                                                <p>
+                                                        Bara hör av er till oss om vi kan hjälpa till
+                                                        med era boendearrangemang.
+                                                </p>
+                                                </span>
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Map.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <img src="Karta2.png" width="100%">
+                                        </div>
+                                </div>
+                                <div class="column">
+                                        <div>
+                                                <img src="Heart.png" width="42">
+                                        </div>
+                                        <div class="content">
+                                                <span>
+                                                        Vi önskar så innerligt att få fira vår stora dag tillsammans med er! Varmt välkomna!
                                                 </span>
                                         </div>
                                 </div>
